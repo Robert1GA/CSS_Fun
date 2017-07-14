@@ -1,0 +1,179 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -300px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0 rgba(0,0,0,0.3);
+  overflow: hidden;
+  width: 600px;
+  height: 600px;
+  background: #272C34;
+  color: #fff;
+}
+.word {
+  position: absolute;
+  width: 400px;
+  height: 120px;
+  top: 140px;
+  left: 0;
+}
+.light {
+  position: absolute;
+  background: #1A1E24;
+  box-shadow: 0 0 6px 0 #1A1E24;
+  border-radius: 6px;
+}
+.ff {
+  position: absolute;
+  width: 69px;
+  height: 120px;
+  top: 0;
+  left: 68px;
+}
+.ff .left {
+  top: 0;
+  left: 0;
+  height: 120px;
+  width: 6px;
+  /*background: white;*/
+}
+.ff .top {
+  top: 0;
+  left: 9px;
+  height: 6px;
+  width: 50px;
+}
+.ff .middle {
+  top: 56px;
+  left: 9px;
+  height: 6px;
+  width: 50px;
+}
+.ii {
+  position: absolute;
+  width: 69px;
+  height: 120px;
+  top: 0;
+  left: 162px;
+}
+.ii .left {
+  top: 0;
+  left: 0;
+  height: 120px;
+  width: 6px;
+}
+.gg {
+  position: absolute;
+  width: 69px;
+  height: 120px;
+  top: 0;
+  left: 274px;
+}
+.gg .left {
+  top: 0;
+  left: 0;
+  height: 120px;
+  width: 6px;
+}
+.gg .top {
+  top: 0px;
+  left: 9px;
+  height: 6px;
+  width: 50px;
+}
+.gg .middle {
+  top: 56px;
+  left: 9px;
+  height: 6px;
+  width: 50px;
+}
+.gg .bottom {
+  bottom: 0;
+  left: 9px;
+  height: 6px;
+  width: 50px;
+}
+.gg .right {
+  bottom: 9px;
+  left: 68px;
+  height: 50px;
+  width: 6px;
+}
+
+
+
+
+.dd {
+  position: absolute;
+  width: 72px;
+  height: 120px;
+  top: 0;
+  left: 274px;
+}
+.dd .left {
+  top: 0;
+  left: 0;
+  height: 120px;
+  width: 6px;
+}
+.dd .right {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 120px;
+  width: 70px;
+}
+/*.circleBox .circle {
+  animation: flickr-circle 6s ease-in-out $delay infinite alternate both;
+}
+.dot {
+  animation: flickr-dots 6s ease-in-out $delay infinite alternate both;
+}*/
+.circleBox {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  width: 70px;
+  overflow: hidden;
+  border: 1px solid cyan;
+}
+.circleBox .circle {
+  box-sizing: border-box;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 10px;
+  right: 10px;
+  border-style: solid;
+  border-width: 6px;
+  border-color: #1A1E24 #1A1E24 transparent transparent;
+  border-radius: 50%;
+  /*box-shadow: 0px 0px 10px 0px #1A1E24, inset 0px 0px 10px 0px #F1F4F5;*/
+  transform: rotate(45deg);
+}
+.topDotBox {
+  position: absolute;
+  top: -10px;
+  right: 60px;
+  width: 26px;
+  height: 26px;
+  overflow: hidden;
+}
+.bottomDotBox {
+  position: absolute;
+  bottom: -10px;
+  right: 60px;
+  width: 26px;
+  height: 26px;
+  overflow: hidden;
+}
+.dot {
+  top: 10px;
+  right: -12px;
+  width: 15px;
+  height: 6px;
+}
