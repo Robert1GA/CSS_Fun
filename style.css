@@ -162,9 +162,9 @@
 }
 .g1 .middle {
   top: 56px;
-  left: 9px;
+  right: 9px;
   height: 6px;
-  width: 50px;
+  width: 32px;
 }
 .g1 .bottom {
   bottom: 0;
