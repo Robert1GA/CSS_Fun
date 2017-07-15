@@ -10,170 +10,262 @@
   width: 600px;
   height: 600px;
   background: #272C34;
-  color: #fff;
-}
-.word {
-  position: absolute;
-  width: 400px;
-  height: 120px;
-  top: 140px;
-  left: 0;
+  color: #f1f;
 }
 .light {
   position: absolute;
   background: #1A1E24;
   box-shadow: 0 0 6px 0 #1A1E24;
   border-radius: 6px;
+  -webkit-animation: flicker 5s infinite alternate both; /* Safari 4+ */
+  -moz-animation: flicker 5s infinite alternate both; /* Fx 5+ */
+  -o-animation: flicker 5s infinite alternate both; /* Opera 12+ */
+  animation: flicker 5s infinite alternate both; /* IE 10+, Fx 29+ */
 }
-.ff {
+@-webkit-keyframes flicker {
+  35%, 37%, 39%, 41%, 100% {
+    background: #F1F4F5;
+    /*box-shadow: 0 0 10px 0 #F1F4F5;*/
+  }
+  0%, 34%, 36%, 36%, 38%, 40% {
+    background: #1A1E24;
+    /*box-shadow: 0 0 6px 0 #1A1E24;*/
+  }
+}
+@-moz-keyframes flicker {
+  35%, 37%, 39%, 41%, 100% {
+    background: #F1F4F5;
+    /*box-shadow: 0 0 10px 0 #F1F4F5;*/
+  }
+  0%, 34%, 36%, 36%, 38%, 40% {
+    background: #1A1E24;
+    /*box-shadow: 0 0 6px 0 #1A1E24;*/
+  }
+}
+@-o-keyframes flicker {
+  35%, 37%, 39%, 41%, 100% {
+    background: #F1F4F5;
+    /*box-shadow: 0 0 10px 0 #F1F4F5;*/
+  }
+  0%, 34%, 36%, 36%, 38%, 40% {
+    background: #1A1E24;
+    /*box-shadow: 0 0 6px 0 #1A1E24;*/
+  }
+}
+@keyframes flicker {
+  35%, 37%, 39%, 41%, 100% {
+    background: #F1F4F5;
+    /*box-shadow: 0 0 10px 0 #F1F4F5;*/
+  }
+  0%, 34%, 36%, 36%, 38%, 40% {
+    background: #1A1E24;
+    /*box-shadow: 0 0 6px 0 #1A1E24;*/
+  }
+}
+
+/* FIRST WORD / LETTERS */
+.first-word {
+  position: absolute;
+  width: 600px;
+  height: 120px;
+  top: 140px;
+  left: 0;
+}
+.f1 {
   position: absolute;
   width: 69px;
   height: 120px;
   top: 0;
   left: 68px;
 }
-.ff .left {
+.f1 .left {
   top: 0;
   left: 0;
   height: 120px;
   width: 6px;
-  /*background: white;*/
 }
-.ff .top {
+.f1 .top {
   top: 0;
   left: 9px;
   height: 6px;
   width: 50px;
 }
-.ff .middle {
+.f1 .middle {
   top: 56px;
   left: 9px;
   height: 6px;
   width: 50px;
 }
-.ii {
+.r1 {
+
+}
+.i1 {
   position: absolute;
-  width: 69px;
+  width: 35px;
   height: 120px;
   top: 0;
-  left: 162px;
+  left: 256px;
 }
-.ii .left {
+.i1 .left {
   top: 0;
   left: 0;
   height: 120px;
   width: 6px;
 }
-.gg {
+.g1 {
   position: absolute;
   width: 69px;
   height: 120px;
   top: 0;
-  left: 274px;
+  left: 291px;
 }
-.gg .left {
+.g1 .left {
   top: 0;
   left: 0;
   height: 120px;
   width: 6px;
 }
-.gg .top {
+.g1 .top {
   top: 0px;
   left: 9px;
   height: 6px;
   width: 50px;
 }
-.gg .middle {
+.g1 .middle {
   top: 56px;
   left: 9px;
   height: 6px;
   width: 50px;
 }
-.gg .bottom {
+.g1 .bottom {
   bottom: 0;
   left: 9px;
   height: 6px;
   width: 50px;
 }
-.gg .right {
-  bottom: 9px;
-  left: 68px;
+.g1 .right {
+  bottom: 6px;
+  left: 58px;
   height: 50px;
   width: 6px;
 }
-
-
-
-
-.dd {
+.h1 {
   position: absolute;
-  width: 72px;
+  width: 69px;
   height: 120px;
   top: 0;
-  left: 274px;
+  left: 385px;
 }
-.dd .left {
+.h1 .left {
   top: 0;
   left: 0;
   height: 120px;
   width: 6px;
 }
-.dd .right {
+.h1 .middle {
+  top: 56px;
+  left: 9px;
+  height: 6px;
+  width: 50px;
+}
+.h1 .right {
+  top: 0;
+  right: 0px;
+  height: 120px;
+  width: 6px;
+}
+.t1 {
   position: absolute;
-  z-index: 1;
+  width: 69px;
+  height: 120px;
+  top: 0;
+  left: 479px;
+}
+.t1 .top {
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 65px;
+}
+.t1 .center {
+  top: 9px;
+  left: 32px;
+  height: 111px;
+  width: 6px;
+}
+
+/* SECOND WORD / LETTERS */
+.second-word {
+  position: absolute;
+  width: 600px;
+  height: 120px;
+  top: 300px;
+  left: 0;
+}
+.i2 {
+  position: absolute;
+  width: 35px;
+  height: 120px;
+  top: 0;
+  left: 190px;
+}
+.i2 .left {
+  top: 0;
+  left: 0;
+  height: 120px;
+  width: 6px;
+}
+.n2-1 {
+  position: absolute;
+  width: 85px;
+  height: 120px;
+  top: 0;
+  left: 230px;
+}
+.n2-1 .left {
+  top: 0;
+  left: 0;
+  height: 120px;
+  width: 6px;
+}
+.n2-1 .middle {
+  top: 0;
+  left: 9px;
+  height: 6px;
+  width: 135px;
+  transform: rotate(62deg);
+  transform-origin: 3px 3px;
+}
+.n2-1 .right {
   top: 0;
   right: 0;
   height: 120px;
-  width: 70px;
+  width: 6px;
 }
-/*.circleBox .circle {
-  animation: flickr-circle 6s ease-in-out $delay infinite alternate both;
-}
-.dot {
-  animation: flickr-dots 6s ease-in-out $delay infinite alternate both;
-}*/
-.circleBox {
+.n2-2 {
   position: absolute;
-  top: -10px;
-  right: -10px;
-  bottom: -10px;
-  width: 70px;
-  overflow: hidden;
-  border: 1px solid cyan;
-}
-.circleBox .circle {
-  box-sizing: border-box;
-  position: absolute;
-  width: 120px;
+  width: 85px;
   height: 120px;
-  top: 10px;
-  right: 10px;
-  border-style: solid;
-  border-width: 6px;
-  border-color: #1A1E24 #1A1E24 transparent transparent;
-  border-radius: 50%;
-  /*box-shadow: 0px 0px 10px 0px #1A1E24, inset 0px 0px 10px 0px #F1F4F5;*/
-  transform: rotate(45deg);
+  top: 0;
+  left: 340px;
 }
-.topDotBox {
-  position: absolute;
-  top: -10px;
-  right: 60px;
-  width: 26px;
-  height: 26px;
-  overflow: hidden;
+.n2-2 .left {
+  top: 0;
+  left: 0;
+  height: 120px;
+  width: 6px;
 }
-.bottomDotBox {
-  position: absolute;
-  bottom: -10px;
-  right: 60px;
-  width: 26px;
-  height: 26px;
-  overflow: hidden;
-}
-.dot {
-  top: 10px;
-  right: -12px;
-  width: 15px;
+.n2-2 .middle {
+  top: 0;
+  left: 9px;
   height: 6px;
+  width: 135px;
+  transform: rotate(62deg);
+  transform-origin: 3px 3px;
+}
+.n2-2 .right {
+  top: 0;
+  right: 0;
+  height: 120px;
+  width: 6px;
 }
