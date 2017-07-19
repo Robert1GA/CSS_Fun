@@ -10,14 +10,14 @@
   width: 600px;
   height: 600px;
   background: #272C34;
-  color: #f1f;
+  color: #fff;
 }
 .light {
   position: absolute;
   background: #1A1E24;
   box-shadow: 0 0 6px 0 #1A1E24;
   border-radius: 6px;
-  animation: flicker 5s infinite alternate both; /* IE 10+, Fx 29+ */
+  animation: flicker 5s ease-in-out 3.97s infinite alternate both; /* IE 10+, Fx 29+ */
 }
 .light-dead {
   position: absolute;
@@ -36,10 +36,6 @@
     background: #1A1E24;
     box-shadow: 0 0 6px 0 #1A1E24;
   }
-}
-@mixin animation1 {
-  animation: flicker 6s ease-in-out (
-    (random(400) / 100) * 1s ) infinite alternate both;
 }
 /* Flickering For Letter F-Only */
 @keyframes flicker-dead {
@@ -99,18 +95,21 @@
   left: 0;
   height: 120px;
   width: 6px;
+  animation: flicker 5s ease-in-out 3.97s infinite alternate both;
 }
 .r1 .top {
   top: 0;
   left: 9px;
   height: 6px;
   width: 50px;
+  animation: flicker 5s ease-in-out 3.36s infinite alternate both;
 }
 .r1 .top-right {
   top: 0;
   left: 63px;
   height: 40px;
   width: 6px;
+  animation: flicker 5s ease-in-out 2.52s infinite alternate both;
 }
 .r1 .middle {
   top: 42px;
@@ -119,6 +118,7 @@
   width: 6px;
   transform: rotate(63deg);
   transform-origin: top;
+  animation: flicker 5s ease-in-out 3.51s infinite alternate both;
 }
 .r1 .middle-right {
   top: 61px;
@@ -127,6 +127,7 @@
   width: 6px;
   transform: rotate(-22deg);
   transform-origin: top;
+  animation: flicker 5s ease-in-out 1.7s infinite alternate both;
 }
 .i1 {
   position: absolute;
@@ -140,6 +141,7 @@
   left: 0;
   height: 120px;
   width: 6px;
+  animation: flicker 5s ease-in-out 1.66s infinite alternate both;
 }
 .g1 {
   position: absolute;
@@ -153,30 +155,35 @@
   left: 0;
   height: 120px;
   width: 6px;
+  animation: flicker 5s ease-in-out 3.10s infinite alternate both;
 }
 .g1 .top {
   top: 0px;
   left: 9px;
   height: 6px;
   width: 50px;
+  animation: flicker 5s ease-in-out 2.43s infinite alternate both; 
 }
 .g1 .middle {
   top: 56px;
   right: 9px;
   height: 6px;
   width: 32px;
+  animation: flicker 5s ease-in-out 3.21s infinite alternate both;
 }
 .g1 .bottom {
   bottom: 0;
   left: 9px;
   height: 6px;
   width: 50px;
+  animation: flicker 5s ease-in-out 1.57s infinite alternate both;
 }
 .g1 .right {
   bottom: 6px;
   left: 58px;
   height: 50px;
   width: 6px;
+  animation: flicker 5s ease-in-out 2.13s infinite alternate both;
 }
 .h1 {
   position: absolute;
@@ -190,18 +197,21 @@
   left: 0;
   height: 120px;
   width: 6px;
+  animation: flicker 5s ease-in-out 1.97s infinite alternate both;
 }
 .h1 .middle {
   top: 56px;
   left: 9px;
   height: 6px;
   width: 50px;
+  animation: flicker 5s ease-in-out 0.41s infinite alternate both;
 }
 .h1 .right {
   top: 0;
   right: 0px;
   height: 120px;
   width: 6px;
+  animation: flicker 5s ease-in-out 2.58s infinite alternate both;
 }
 .t1 {
   position: absolute;
@@ -215,12 +225,14 @@
   left: 0;
   height: 6px;
   width: 65px;
+  animation: flicker 5s ease-in-out 3.22s infinite alternate both;
 }
 .t1 .center {
   top: 9px;
   left: 32px;
   height: 111px;
   width: 6px;
+  animation: flicker 5s ease-in-out 0.97s infinite alternate both;
 }
 
 /* SECOND WORD / LETTERS */
